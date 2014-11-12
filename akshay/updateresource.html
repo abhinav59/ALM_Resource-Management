@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<title>Update Resource</title>
+<script type="text/javascript">
+function validate()
+{
+if(document.getElementById("t1").value==null ||document.getElementById("t1").value=="")
+{
+	alert("Enter User ID");
+	return false;
+}
+if(document.getElementById("t2").value==null ||document.getElementById("t2").value=="")
+{
+	alert("Enter First Name");
+	return false;
+}
+if(document.getElementById("t3").value==null ||document.getElementById("t3").value=="")
+{
+	alert("Enter Last Name");
+	return false;
+}
+if(document.getElementById("t4").value==null ||document.getElementById("t4").value=="")
+{
+	alert("Enter Role");
+	return false;
+}
+if(document.getElementById("t5").value==null ||document.getElementById("t5").value=="")
+{
+	alert("Enter Start Date");
+	return false;
+}
+if(document.getElementById("t6").value==null ||document.getElementById("t6").value=="")
+{
+	alert("Enter End Date");
+	return false;
+}
+if(document.getElementById("t7").value==null ||document.getElementById("t7").value=="")
+{
+	alert("Enter Pseudo Role");
+	return false;
+}
+if(document.getElementById("t8").value==null ||document.getElementById("t8").value=="")
+{
+	alert("Enter Status");
+	return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<div class="panel-body">
+<form action="home.html" onsubmit="return validate()">
+<div class="form-group">
+<label>User ID</label><br>
+<input type="text" id="t1" class="form-control"  size="" placeholder="Enter User ID">
+</div>
+<br>
+
+<div class="form-group">
+<label>First Name</label><br>
+<input type="text" id="t2" class="form-control"  size="" placeholder="Enter First Name">
+</div>
+<br>
+
+<div class="form-group">
+<label>Last Name</label><br>
+<input type="text" id="t3" class="form-control"  size="" placeholder="Enter Last Name">
+</div>
+<br>
+
+<div class="form-group">
+<label>Role</label><br>
+<input type="text" id="t4" class="form-control"  size="" placeholder="Enter Role">
+</div>
+<br>
+
+<div class="form-group">
+<label>Start Date</label><br>
+<input type="text" id="t5" class="form-control"  size="" placeholder="Enter Start Date">
+</div>
+<br>
+<div class="form-group">
+<label>End Date</label><br>
+<input type="text" id="t6" class="form-control"  size="" placeholder="Enter End Date">
+</div>
+<br>
+
+<div class="form-group">
+<label>Pseudo Role</label><br>
+<input type="text" id="t7" class="form-control"  size="" placeholder="Enter Pseudo Role">
+</div>
+<br>
+<div class="form-group">
+<label>Status</label><br>
+<input type="text" id="t8" class="form-control"  size="" placeholder="Enter Status">
+</div>
+<br>
+
+<div class="form-group">
+<input type="submit" value="Update Resource">
+</div>
+</form>
+</div>
+
+</body>
+</html>
